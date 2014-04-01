@@ -73,7 +73,7 @@ class MorrisLineCharts extends MorrisCharts {
    *
    * @var bool $parseTime
    */
-  public $parseTime = false;
+  public $parseTime = true;
 
   /**
    * Set to a string value (eg: '%') to add a label suffix all y-labels.
@@ -234,4 +234,15 @@ class MorrisLineCharts extends MorrisCharts {
    * @var string $fillOpacity
    */
   public $fillOpacity = '1.0';
+
+  /**
+   * Enable auto resize
+   *
+   * @brief Resize
+   *
+   * @since Morris 0.5.0
+   *
+   * @var bool $resize
+   */
+  public $resize = false;
 }

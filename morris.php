@@ -13,6 +13,15 @@
 class Morris {
 
   /**
+   * Description
+   *
+   * @brief
+   *
+   * @var string
+   */
+  protected $__charts_method = 'Line';
+
+  /**
    * The ID of (or a reference to) the element into which to insert the graph.
    * Note: this element must have a width and height defined in its styling.
    *
@@ -53,7 +62,7 @@ class Morris {
   }
 
   /**
-   * Create an instance of MorrisCharts class
+   * Create an instance of Morris class
    *
    * @brief Construct
    *
@@ -77,7 +86,7 @@ class Morris {
   {
     $return = array();
     foreach ( $this as $property => $value ) {
-      if ( '' === $value || is_null( $value ) || ( is_array( $value ) && empty( $value ) ) ) {
+      if ( '__' == substr( $property, 0, 2 ) || '' === $value || is_null( $value ) || ( is_array( $value ) && empty( $value ) ) ) {
         continue;
       }
       $return[ $property ] = $value;
@@ -97,5 +106,16 @@ class Morris {
   {
     return json_encode( $this->toArray() );
   }
+
+  public function toJavascript()
+  {
+    ob_start();
+    ?>
+    <script type="text/javascript">
+      Morris.<?php echo $this->__charts_method ?>
+    </script>
+    <?php
+  }
+
 
 }

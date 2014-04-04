@@ -70,7 +70,7 @@ class MorrisCharts extends Morris {
    *
    * @var string $ymin
    */
-  public $ymin = 'auto';
+  public $ymin = 0;
 
   /**
    * Set to false to always show a hover legend.

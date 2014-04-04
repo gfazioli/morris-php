@@ -107,14 +107,31 @@ class Morris {
     return json_encode( $this->toArray() );
   }
 
+  /**
+   * Return the HTML markup for Javascript code
+   *
+   * @brief Brief
+   * @return string
+   */
   public function toJavascript()
   {
     ob_start();
     ?>
     <script type="text/javascript">
-      Morris.<?php echo $this->__charts_method ?>
+      jQuery( function ( $ )
+      {
+        "use strict";
+
+        Morris.<?php echo $this->__charts_method ?>(
+          <?php echo $this->toJSON() ?>
+          );
+      });
     </script>
     <?php
+    $buffer = ob_get_contents();
+    ob_end_clean();
+
+    return $buffer;
   }
 
 

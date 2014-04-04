@@ -35,4 +35,19 @@ class MorrisDonutCharts extends Morris {
    */
   public $formatter = '';
 
+  /**
+   * Create an instance of MorrisDonutCharts class
+   *
+   * @brief Construct
+   *
+   * @param string $element_id The element id
+   *
+   * @return MorrisDonutCharts
+   */
+  public function __construct( $element_id )
+  {
+    $this->element         = $element_id;
+    $this->__charts_method = 'Donut';
+  }
+
 }

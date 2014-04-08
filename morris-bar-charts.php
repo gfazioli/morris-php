@@ -12,6 +12,16 @@
  */
 class MorrisBarCharts extends MorrisCharts {
 
+  public $barSizeRatio = 0.75;
+
+  public $barGap = 3;
+
+  public $barOpacity = 1.0;
+
+  public $barRadius = array( 0, 0, 0, 0 );
+
+  public $xLabelMargin = 50;
+
   /**
    * Array containing colors for the series bars.
    *
@@ -19,7 +29,15 @@ class MorrisBarCharts extends MorrisCharts {
    *
    * @var array $barColors
    */
-  public $barColors = array();
+  public $barColors = array(
+    '#0b62a4',
+    '#7a92a3',
+    '#4da74d',
+    '#afd8f8',
+    '#edc240',
+    '#cb4b4b',
+    '#9440ed'
+  );
 
   /**
    * Set to true to draw bars stacked vertically.

@@ -155,4 +155,81 @@ class MorrisCharts extends Morris {
    */
   public $gridTextWeight = 'normal';
 
+  /**
+   * Set to true to enable automatic resizing when the containing element resizes. (default: false).
+   * This has a significant performance impact, so is disabled by default.
+   *
+   * @brief Resize
+   *
+   * @since Morris 0.5.0
+   *
+   * @var bool $resize
+   */
+  public $resize = false;
+
+  public $rangeSelect =  null;
+  public $rangeSelectColor = '#eef';
+  public $padding = 25;
+  public $numLines = 5;
+
+  /**
+   * A list of x-values to draw as vertical 'event' lines on the chart.
+   *
+   * eg: events: ['2012-01-01', '2012-02-01', '2012-03-01']
+   *
+   * @brief Events
+   *
+   * @var array $events
+   */
+  public $events = array();
+
+  /**
+   * Width, in pixels, of the event lines.
+   *
+   * @brief Events line width
+   *
+   * @var int $eventStrokeWidth
+   */
+  public $eventStrokeWidth = 1;
+
+  /**
+   * Array of color values to use for the event line colors. If you list fewer colors here than you have lines in
+   * events, then the values will be cycled.
+   *
+   * @brief Events colors
+   *
+   * @var array $eventLineColors
+   */
+  public $eventLineColors = array( '#005a04', '#ccffbb', '#3a5f0b', '#005502' );
+
+  /**
+   * A list of y-values to draw as horizontal 'goal' lines on the chart.
+   *
+   * eg: goals: [1.0, -1.0]
+   *
+   * @brief Goals
+   *
+   * @var array $goals
+   */
+  public $goals = array();
+
+  /**
+   * Width, in pixels, of the goal lines.
+   *
+   * @brief Goal stroke width
+   *
+   * @var int $goalStrokeWidth
+   */
+  public $goalStrokeWidth = 1;
+
+  /**
+   * Array of color values to use for the goal line colors. If you list fewer colors here than you have lines in goals,
+   * then the values will be cycled.
+   *
+   * @brief Goals colors
+   *
+   * @var array $goalLineColors
+   */
+  public $goalLineColors = array( '#666633', '#999966', '#cc6666', '#663333' );
+
 }

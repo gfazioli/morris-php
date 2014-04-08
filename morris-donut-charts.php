@@ -20,7 +20,7 @@ class MorrisDonutCharts extends Morris {
    *
    * @var array $colors
    */
-  public $colors = array();
+  public $colors = array( '#0B62A4', '#3980B5', '#679DC6', '#95BBD7', '#B0CCE1', '#095791', '#095085', '#083E67', '#052C48', '#042135' );
 
   /**
    * A function that will translate a y-value into a label for the centre of the donut.
@@ -34,6 +34,9 @@ class MorrisDonutCharts extends Morris {
    * @var string $formatter
    */
   public $formatter = '';
+
+  public $backgroundColor = '#FFFFFF';
+  public $labelColor = '#000000';
 
   /**
    * Create an instance of MorrisDonutCharts class

@@ -19,7 +19,7 @@ class MorrisLineCharts extends MorrisCharts {
    *
    * @var array $lineColors
    */
-  public $lineColors = array();
+  public $lineColors = array( '#0b62a4', '#7A92A3', '#4da74d', '#afd8f8', '#edc240', '#cb4b4b', '#9440ed' );
 
   /**
    * Width of the series lines, in pixels.
@@ -153,66 +153,6 @@ class MorrisLineCharts extends MorrisCharts {
   public $yLabelFormat = '';
 
   /**
-   * A list of y-values to draw as horizontal 'goal' lines on the chart.
-   *
-   * eg: goals: [1.0, -1.0]
-   *
-   * @brief Goals
-   *
-   * @var array $goals
-   */
-  public $goals = array();
-
-  /**
-   * Width, in pixels, of the goal lines.
-   *
-   * @brief Goal stroke width
-   *
-   * @var int $goalStrokeWidth
-   */
-  public $goalStrokeWidth = 1;
-
-  /**
-   * Array of color values to use for the goal line colors. If you list fewer colors here than you have lines in goals,
-   * then the values will be cycled.
-   *
-   * @brief Goals colors
-   *
-   * @var array $goalLineColors
-   */
-  public $goalLineColors = array();
-
-  /**
-   * A list of x-values to draw as vertical 'event' lines on the chart.
-   *
-   * eg: events: ['2012-01-01', '2012-02-01', '2012-03-01']
-   *
-   * @brief Events
-   *
-   * @var array $events
-   */
-  public $events = array();
-
-  /**
-   * Width, in pixels, of the event lines.
-   *
-   * @brief Events line width
-   *
-   * @var int $eventStrokeWidth
-   */
-  public $eventStrokeWidth = 1;
-
-  /**
-   * Array of color values to use for the event line colors. If you list fewer colors here than you have lines in
-   * events, then the values will be cycled.
-   *
-   * @brief Events colors
-   *
-   * @var array $eventLineColors
-   */
-  public $eventLineColors = array();
-
-  /**
    * When set to false (the default), all null and undefined values in a data series will be ignored and lines will be
    * drawn spanning them.
    * When set to true, null values will break the line and undefined values will be spanned.
@@ -225,24 +165,5 @@ class MorrisLineCharts extends MorrisCharts {
    */
   public $continuousLine = false;
 
-  /**
-   * Change the opacity of the area fill colour.
-   * Accepts values between 0.0 (for completely transparent) and 1.0 (for completely opaque).
-   *
-   * @brief Opacity
-   *
-   * @var string $fillOpacity
-   */
-  public $fillOpacity = '1.0';
 
-  /**
-   * Enable auto resize
-   *
-   * @brief Resize
-   *
-   * @since Morris 0.5.0
-   *
-   * @var bool $resize
-   */
-  public $resize = false;
 }

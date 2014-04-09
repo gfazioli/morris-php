@@ -165,5 +165,20 @@ class MorrisLineCharts extends MorrisCharts {
    */
   public $continuousLine = false;
 
+  /**
+   * Create an instance of MorrisLineCharts class
+   *
+   * @brief Construct
+   *
+   * @param string $element_id The element id
+   *
+   * @return MorrisLineCharts
+   */
+  public function __construct( $element_id )
+  {
+    $this->element         = $element_id;
+    $this->__charts_method = 'Line';
+  }
+
 
 }

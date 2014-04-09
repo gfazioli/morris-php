@@ -49,7 +49,7 @@ class MorrisCharts extends Morris {
    *
    * @var array $labels
    */
-  public $lables = array();
+  public $labels = array();
 
   /**
    * Max. bound for Y-values. Alternatively, set this to 'auto' to compute automatically, or 'auto [num]' to

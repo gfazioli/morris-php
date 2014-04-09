@@ -47,4 +47,19 @@ class MorrisBarCharts extends MorrisCharts {
    * @var bool $stacked
    */
   public $stacked = true;
+
+  /**
+   * Create an instance of MorrisBarCharts class
+   *
+   * @brief Construct
+   *
+   * @param string $element_id The element id
+   *
+   * @return MorrisBarCharts
+   */
+  public function __construct( $element_id )
+  {
+    $this->element         = $element_id;
+    $this->__charts_method = 'Bar';
+  }
 }

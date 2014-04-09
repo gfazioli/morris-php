@@ -259,4 +259,13 @@ class MorrisCharts extends Morris {
    */
   public $preUnits = '';
 
+  /**
+   * Angle of x label
+   *
+   * @brief Angle
+   *
+   * @var int $xLabelAngle
+   */
+  public $xLabelAngle = 0;
+
 }

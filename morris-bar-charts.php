@@ -59,7 +59,6 @@ class MorrisBarCharts extends MorrisCharts {
    */
   public function __construct( $element_id )
   {
-    $this->element         = $element_id;
-    $this->__charts_method = 'Bar';
+    parent::__construct( $element_id, MorrisChartTypes::BAR );
   }
 }

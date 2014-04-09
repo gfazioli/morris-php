@@ -23,4 +23,4 @@ For more information on SemVer, please visit http://semver.org/.
 ## Version 0.0.2
 
 * Fixed wrong property `labels`
-* Added constructor for `__charts_method`
+* Added constructor for `__chart_type`

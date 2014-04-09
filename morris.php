@@ -1,6 +1,24 @@
 <?php
 
 /**
+ * Model class constanst with Morris Chart types
+ *
+ * @class           MorrisChartType
+ * @author          =undo= <info@wpxtre.me>
+ * @copyright       Copyright (C) 2012-2014 wpXtreme Inc. All Rights Reserved.
+ * @date            2014-04-09
+ * @version         1.0.0
+ *
+ */
+class MorrisChartTypes {
+
+  const LINE = 'Line';
+  const BAR = 'Bar';
+  const DONUT = 'Donut';
+  const AREA = 'Area';
+}
+
+/**
  * Main Morris model class
  *
  * @class           MorrisCharts
@@ -13,13 +31,13 @@
 class Morris {
 
   /**
-   * Description
+   * Type of chart. This value is used in Javascript Morris method
    *
-   * @brief
+   * @brief Chart
    *
-   * @var string
+   * @var string $__chart_type
    */
-  protected $__charts_method = 'Line';
+  protected $__chart_type = MorrisChartTypes::LINE;
 
   /**
    * The ID of (or a reference to) the element into which to insert the graph.
@@ -67,12 +85,14 @@ class Morris {
    * @brief Construct
    *
    * @param string $element_id The element id
+   * @param string $chart      Optional. Chart Type of chart. Default MorrisChartTypes::LINE
    *
    * @return Morris
    */
-  public function __construct( $element_id )
+  public function __construct( $element_id, $chart = MorrisChartTypes::LINE )
   {
-    $this->element = $element_id;
+    $this->element      = $element_id;
+    $this->__chart_type = $chart;
   }
 
   /**
@@ -122,7 +142,7 @@ class Morris {
       {
         "use strict";
 
-        Morris.<?php echo $this->__charts_method ?>(
+        Morris.<?php echo $this->__chart_type ?>(
           <?php echo $this->toJSON() ?>
           );
       });

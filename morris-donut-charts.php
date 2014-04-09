@@ -49,8 +49,7 @@ class MorrisDonutCharts extends Morris {
    */
   public function __construct( $element_id )
   {
-    $this->element         = $element_id;
-    $this->__charts_method = 'Donut';
+    parent::__construct( $element_id, MorrisChartTypes::DONUT );
   }
 
 }

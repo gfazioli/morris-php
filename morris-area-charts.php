@@ -42,7 +42,6 @@ class MorrisAreaCharts extends MorrisLineCharts {
    */
   public function __construct( $element_id )
   {
-    $this->element         = $element_id;
-    $this->__charts_method = 'Area';
+    parent::__construct( $element_id, MorrisChartTypes::AREA );
   }
 }

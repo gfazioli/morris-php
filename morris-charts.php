@@ -232,4 +232,31 @@ class MorrisCharts extends Morris {
    */
   public $goalLineColors = array( '#666633', '#999966', '#cc6666', '#663333' );
 
+  /**
+   * Set to false to skip time/date parsing for X values, instead treating them as an equally-spaced series.
+   *
+   * @brief Parse time
+   *
+   * @var bool $parseTime
+   */
+  public $parseTime = true;
+
+  /**
+   * Set to a string value (eg: '%') to add a label suffix all y-labels.
+   *
+   * @brief Post units
+   *
+   * @var string $postUnits
+   */
+  public $postUnits = '';
+
+  /**
+   * Set to a string value (eg: '$') to add a label prefix all y-labels.
+   *
+   * @brief Pre units
+   *
+   * @var string $preUnits
+   */
+  public $preUnits = '';
+
 }

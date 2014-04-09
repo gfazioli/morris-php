@@ -1,6 +1,6 @@
 ## Morris PHP v0.0.2
 
-This project is a PHP part for Morris.js ( http://www.oesmith.co.uk/morris.js/index.html ).
+This project is a PHP part for Morris.js ( http://morrisjs.github.io/morris.js/ ).
 
 You can use this PHP class to wrap the Morris Javascript class
 

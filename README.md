@@ -1,17 +1,28 @@
 ## Morris PHP v0.0.2
 
-This project is a PHP part for Morris.js ( http://www.oesmith.co.uk/morris.js/index.html ).
+This project is a PHP part for Morris.js ( http://morrisjs.github.io/morris.js/ ).
 
 You can use this PHP class to wrap the Morris Javascript class
 
 ### Getting Started
 
-1. Download libs from ...
-2. Include main `Morris` php file
+1. Download Morris Javascript lib from http://morrisjs.github.io/morris.js/
+2. Include main `morris.php` php file
+3. Include chart base `morris-charts.php` php file
+3. Include all or single chart that you like use
 
 ### Examples
 
 ```php
+
+// Require: use your own path
+require_once 'morris.php';
+require_once 'morris-charts.php';
+
+// Optional: include chart line
+require_once 'morris-line-charts.php';
+
+
 /**
  * Display
  *

@@ -12,10 +12,10 @@
  */
 class MorrisChartTypes {
 
-  const LINE = 'Line';
-  const BAR = 'Bar';
+  const LINE  = 'Line';
+  const BAR   = 'Bar';
   const DONUT = 'Donut';
-  const AREA = 'Area';
+  const AREA  = 'Area';
 }
 
 /**

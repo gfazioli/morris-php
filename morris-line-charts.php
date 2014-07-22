@@ -132,7 +132,8 @@ class MorrisLineCharts extends MorrisCharts {
    *
    * Note: in v0.5.0, this setting will be removed and the behaviour will be to break lines at null values.
    *
-   * @brief Continous line
+   * @brief      Continous line
+   * @deprecated since 0.5.1
    *
    * @var bool $continuousLine
    */

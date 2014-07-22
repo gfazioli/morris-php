@@ -20,6 +20,11 @@ For more information on SemVer, please visit http://semver.org/.
 
 ---
 
+## Version 0.5.1
+
+* Align Morris PHP version with Morris JS
+* Added deprecated for Morris v0.5.1
+
 ## Version 0.0.2
 
 * Fixed wrong property `labels`

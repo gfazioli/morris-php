@@ -1,4 +1,4 @@
-## Morris PHP v0.0.2
+## Morris PHP v0.5.1
 
 This project is a PHP part for Morris.js ( http://morrisjs.github.io/morris.js/ ).
 

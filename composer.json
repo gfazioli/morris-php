@@ -23,10 +23,8 @@
     "url": "https://github.com/gfazioli/morris-php.git"
   },
   "support": {
-    "email": "g.fazioli@wpxtre.me"
-  },
-  "bugs": {
-    "url": "https://github.com/gfazioli/morris-php/issues"
+    "email": "g.fazioli@wpxtre.me",
+    "issues": "https://github.com/gfazioli/morris-php/issues"
   },
   "minimum-stability": "stable",
   "autoload": {
@@ -34,7 +32,7 @@
     "morris-php": "src"
     }
   },
-  "prefer-stable" : true,
+  "prefer-stable" : "true",
   "require": {
     "php": ">=5.2.4",
     "morrisjs/morris.js" : "dev-master"

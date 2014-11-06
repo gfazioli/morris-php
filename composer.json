@@ -1,0 +1,40 @@
+{
+  "name": "gfazioli/morris-php",
+  "version": "0.5.1",
+  "homepage": "https://github.com/gfazioli/morris-php",
+  "license": "GPL",
+  "type": "library",
+  "description": "PHP helper classes for morris.js",
+  "keywords": [
+    "morris",
+    "charts",
+    "php",
+    "javascript"
+  ],
+  "authors": [
+    {
+    "name": "Giovambattista Fazioli",
+    "email": "g.fazioli@wpxtre.me",
+    "homepage" : "http://undolog.com"
+    }    
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gfazioli/morris-php.git"
+  },
+  "support": {
+    "email": "g.fazioli@wpxtre.me",
+  },
+  "bugs": {
+    "url": "https://github.com/gfazioli/morris-php/issues"
+  },
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-0": {
+    "morris-php": "src"
+    }
+  },
+  "require": {
+    "php": ">=5.2.4"
+  }
+}

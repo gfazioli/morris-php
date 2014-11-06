@@ -2,7 +2,7 @@
   "name": "gfazioli/morris-php",
   "version": "0.5.1",
   "homepage": "https://github.com/gfazioli/morris-php",
-  "license": "GPL",
+  "license": "MIT",
   "type": "library",
   "description": "PHP helper classes for morris.js",
   "keywords": [

@@ -35,6 +35,7 @@
     }
   },
   "require": {
-    "php": ">=5.2.4"
+    "php": ">=5.2.4",
+    "morrisjs/morris.js" : "dev-master"
   }
 }

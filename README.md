@@ -13,6 +13,11 @@ You can use this PHP class to wrap the Morris Javascript class
 3. Include chart base `morris-charts.php` php file
 3. Include all or single chart that you like use
 
+
+### Getting Started with Composer
+
+1. Use `composer.json`
+
 ### Examples
 
 ```php

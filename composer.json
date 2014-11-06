@@ -28,12 +28,13 @@
   "bugs": {
     "url": "https://github.com/gfazioli/morris-php/issues"
   },
-  "minimum-stability": "dev",
+  "minimum-stability": "stable",
   "autoload": {
     "psr-0": {
     "morris-php": "src"
     }
   },
+  "prefer-stable" : true,
   "require": {
     "php": ">=5.2.4",
     "morrisjs/morris.js" : "dev-master"

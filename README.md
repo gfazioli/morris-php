@@ -1,5 +1,7 @@
 ## Morris PHP v0.5.1
 
+[![Latest Stable Version](https://poser.pugx.org/gfazioli/morris-php/v/stable.svg)](https://packagist.org/packages/gfazioli/morris-php) [![Total Downloads](https://poser.pugx.org/gfazioli/morris-php/downloads.svg)](https://packagist.org/packages/gfazioli/morris-php) [![Latest Unstable Version](https://poser.pugx.org/gfazioli/morris-php/v/unstable.svg)](https://packagist.org/packages/gfazioli/morris-php) [![License](https://poser.pugx.org/gfazioli/morris-php/license.svg)](https://packagist.org/packages/gfazioli/morris-php)
+
 This project is a PHP part for Morris.js ( http://morrisjs.github.io/morris.js/ ).
 
 You can use this PHP class to wrap the Morris Javascript class

@@ -20,6 +20,13 @@ For more information on SemVer, please visit http://semver.org/.
 
 ---
 
+## Version 0.6.0
+
+* Added namespace
+* Changed filename
+* Changed class name
+* Added method `__toString()`
+
 ## Version 0.5.1
 
 * Align Morris PHP version with Morris JS

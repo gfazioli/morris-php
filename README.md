@@ -22,9 +22,6 @@ You can use this PHP class to wrap the Morris Javascript class
 
 ```php
 
-/**
- * Display
- *
 public function draw()
 {
   ?>

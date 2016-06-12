@@ -1,5 +1,10 @@
 <?php
 
+namespace MorrisPHP;
+
+use MorrisPHP\Charts;
+use MorrisPHP\ChartTypes;
+
 /**
  * Morris Line Charts
  *
@@ -10,7 +15,7 @@
  * @version         1.0.0
  *
  */
-class MorrisLineCharts extends MorrisCharts {
+class Line extends Charts {
 
   /**
    * Array containing colors for the series lines/points.

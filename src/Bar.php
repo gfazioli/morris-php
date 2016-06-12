@@ -1,5 +1,10 @@
 <?php
 
+namespace MorrisPHP;
+
+use MorrisPHP\Charts;
+use MorrisPHP\ChartTypes;
+
 /**
  * Morris Bar Charts
  *
@@ -10,7 +15,7 @@
  * @version         1.0.0
  *
  */
-class MorrisBarCharts extends MorrisCharts {
+class Bar extends Charts {
 
   public $barSizeRatio = 0.75;
 
@@ -51,14 +56,11 @@ class MorrisBarCharts extends MorrisCharts {
   /**
    * Create an instance of MorrisBarCharts class
    *
-   * @brief Construct
-   *
    * @param string $element_id The element id
    *
-   * @return MorrisBarCharts
    */
   public function __construct( $element_id )
   {
-    parent::__construct( $element_id, MorrisChartTypes::BAR );
+    parent::__construct( $element_id, ChartTypes::BAR );
   }
 }

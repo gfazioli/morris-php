@@ -1,5 +1,7 @@
 <?php
 
+namespace MorrisPHP;
+
 /**
  * Model class constanst with Morris Chart types
  *
@@ -10,7 +12,7 @@
  * @version         1.0.0
  *
  */
-class MorrisChartTypes {
+class ChartTypes {
 
   const LINE  = 'Line';
   const BAR   = 'Bar';
@@ -37,7 +39,7 @@ class Morris {
    *
    * @var string $__chart_type
    */
-  protected $__chart_type = MorrisChartTypes::LINE;
+  protected $__chart_type = ChartTypes::LINE;
 
   /**
    * The ID of (or a reference to) the element into which to insert the graph.
@@ -85,11 +87,11 @@ class Morris {
    * @brief Construct
    *
    * @param string $element_id The element id
-   * @param string $chart      Optional. Chart Type of chart. Default MorrisChartTypes::LINE
+   * @param string $chart      Optional. Chart Type of chart. Default ChartTypes::LINE
    *
    * @return Morris
    */
-  public function __construct( $element_id, $chart = MorrisChartTypes::LINE )
+  public function __construct( $element_id, $chart = ChartTypes::LINE )
   {
     $this->element      = $element_id;
     $this->__chart_type = $chart;
@@ -154,5 +156,25 @@ class Morris {
     return $buffer;
   }
 
+  public function __toString()
+  {
+    ob_start();
+    ?>
+    <script type="text/javascript">
+      jQuery( function ( $ )
+      {
+        "use strict";
+
+        Morris.<?php echo $this->__chart_type ?>(
+          <?php echo $this->toJSON() ?>
+          );
+      });
+    </script>
+    <?php
+    $buffer = ob_get_contents();
+    ob_end_clean();
+
+    return $buffer;
+  }
 
 }

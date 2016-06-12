@@ -1,5 +1,9 @@
 <?php
 
+namespace MorrisPHP;
+
+use MorrisPHP\Morris;
+
 /**
  * Morris Charts common model
  *
@@ -10,7 +14,7 @@
  * @version         1.0.0
  *
  */
-class MorrisCharts extends Morris {
+class Charts extends Morris {
 
   /**
    * A string containing the name of the attribute that contains date (X) values.

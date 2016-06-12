@@ -1,5 +1,10 @@
 <?php
 
+namespace MorrisPHP;
+
+use MorrisPHP\Charts;
+use MorrisPHP\ChartTypes;
+
 /**
  * Morris Donut Charts
  *
@@ -10,7 +15,7 @@
  * @version         1.0.0
  *
  */
-class MorrisDonutCharts extends Morris {
+class Donut extends Morris {
 
   /**
    * An array of strings containing HTML-style hex colors for each of the donut segments. Note: if there are fewer
@@ -45,11 +50,10 @@ class MorrisDonutCharts extends Morris {
    *
    * @param string $element_id The element id
    *
-   * @return MorrisDonutCharts
    */
   public function __construct( $element_id )
   {
-    parent::__construct( $element_id, MorrisChartTypes::DONUT );
+    parent::__construct( $element_id, ChartTypes::DONUT );
   }
 
 }

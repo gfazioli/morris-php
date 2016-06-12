@@ -1,5 +1,10 @@
 <?php
 
+namespace MorrisPHP;
+
+use MorrisPHP\Charts;
+use MorrisPHP\ChartTypes;
+
 /**
  * Morris Area Charts
  *
@@ -10,7 +15,7 @@
  * @version         1.0.0
  *
  */
-class MorrisAreaCharts extends MorrisLineCharts {
+class Area extends Charts {
 
   /**
    * Change the opacity of the area fill colour.
@@ -34,14 +39,11 @@ class MorrisAreaCharts extends MorrisLineCharts {
   /**
    * Create an instance of MorrisAreaCharts class
    *
-   * @brief Construct
-   *
    * @param string $element_id The element id
    *
-   * @return MorrisAreaCharts
    */
   public function __construct( $element_id )
   {
-    parent::__construct( $element_id, MorrisChartTypes::AREA );
+    parent::__construct( $element_id, ChartTypes::AREA );
   }
 }

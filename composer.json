@@ -1,6 +1,6 @@
 {
   "name": "gfazioli/morris-php",
-  "version": "0.5.1",
+  "version": "0.6.0",
   "homepage": "https://github.com/gfazioli/morris-php",
   "license": "MIT",
   "type": "library",
@@ -32,7 +32,7 @@
     "morris-php": "src"
     }
   },
-  "prefer-stable" : "true",
+  "prefer-stable" : true,
   "require": {
     "php": ">=5.2.4",
     "morrisjs/morris.js" : "dev-master"

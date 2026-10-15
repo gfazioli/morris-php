@@ -2,6 +2,11 @@
 
 [![Latest Stable Version](https://poser.pugx.org/gfazioli/morris-php/version.svg)](https://packagist.org/packages/gfazioli/morris-php) [![Total Downloads](https://poser.pugx.org/gfazioli/morris-php/downloads.svg)](https://packagist.org/packages/gfazioli/morris-php) [![Latest Unstable Version](https://poser.pugx.org/gfazioli/morris-php/v/unstable.svg)](https://packagist.org/packages/gfazioli/morris-php) [![License](https://poser.pugx.org/gfazioli/morris-php/license.svg)](https://packagist.org/packages/gfazioli/morris-php)
 
+<div align="center">
+  <p><img src="https://raw.githubusercontent.com/gfazioli/gfazioli/master/glancecard/morris-php.svg" width="880" alt="morris-php at a glance, refreshed daily: commits, releases, stars, issues and pull requests, a year of commit activity, the weekly rhythm, languages, latest commits and releases, contributors" /><br>
+  <sub>Made with <a href="https://github.com/gfazioli/glancecard">glancecard</a> · refreshed daily</sub></p>
+</div>
+
 This project is a PHP part for Morris.js ( http://morrisjs.github.io/morris.js/ ).
 
 You can use this PHP class to wrap the Morris Javascript class
